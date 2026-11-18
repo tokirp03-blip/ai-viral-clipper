@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Viral Clipper</title><link rel="stylesheet" href="/static/style.css"></head>
+<body><div class="glow"></div><header><a class="brand" href="#"><span class="logo">▶</span> AI <b>VIRAL</b> CLIPPER</a><span class="pill">BETA · CREATOR STUDIO</span></header>
+<main><section class="hero"><div class="eyebrow">✦ TURN LONG VIDEOS INTO SHORTS</div><h1>Make every moment<br><em>go viral.</em></h1><p>Drop a video. Get vertical clips, ready to publish.</p></section>
+<section class="panel"><div class="tabs"><button class="tab active" data-tab="youtube">▶ YouTube link</button><button class="tab" data-tab="upload">↑ Upload video</button></div>
+<form id="form"><div id="urlbox"><label>YOUTUBE VIDEO URL</label><input id="url" name="url" type="url" placeholder="https://www.youtube.com/watch?v=..." /></div>
+<div id="uploadbox" class="hidden"><label>CHOOSE VIDEO FILE</label><input id="file" name="file" type="file" accept="video/mp4,video/quicktime,video/webm,video/x-matroska"></div>
+<div class="options"><div><label>CLIP LENGTH</label><select name="clip_length"><option value="15">15 seconds</option><option value="30" selected>30 seconds</option><option value="45">45 seconds</option><option value="60">60 seconds</option></select></div><div><label>NUMBER OF CLIPS</label><select name="clip_count"><option>1</option><option>3</option><option>5</option><option>8</option><option>10</option></select></div></div>
+<button class="primary" id="submit">✦ GENERATE MY CLIPS <span>→</span></button><p class="fine">Use videos you own or have permission to edit. Processing happens on your server.</p></form>
+<div id="status" class="status hidden"></div></section>
+<section id="results" class="results hidden"><div class="result-head"><div><div class="eyebrow">YOUR CREATOR PACK</div><h2>Ready to post.</h2></div><span class="pill green">✓ COMPLETE</span></div><div id="meta" class="meta"></div><div id="clips" class="clipgrid"></div><div class="extras"><div class="extra"><h3>✦ Thumbnail</h3><img id="thumb" alt="Generated video thumbnail"><a id="thumbdl" class="download" download>Download thumbnail ↗</a></div><div class="extra"><h3># Hashtags</h3><p id="tags"></p><button id="copy" class="secondary">Copy hashtags</button><p id="captionstatus" class="fine"></p><a id="captions" class="download hidden" download>Download subtitles (.srt) ↗</a></div></div></section>
+<footer>AI VIRAL CLIPPER <span>Built for creators · Black / Red edition</span></footer></main>
+<script src="/static/app.js"></script></body></html>
